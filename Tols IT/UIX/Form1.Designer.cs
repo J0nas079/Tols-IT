@@ -86,6 +86,7 @@
             dataView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             dataView1.Size = new Size(672, 323);
             dataView1.TabIndex = 0;
+            dataView1.CellMouseDown += dataView1_CellMouseDown;
             // 
             // btnlistar
             // 
@@ -95,9 +96,9 @@
             btnlistar.FlatStyle = FlatStyle.Flat;
             btnlistar.Font = new Font("Microsoft Tai Le", 8.25F);
             btnlistar.ForeColor = Color.White;
-            btnlistar.Location = new Point(11, 22);
+            btnlistar.Location = new Point(11, 11);
             btnlistar.Name = "btnlistar";
-            btnlistar.Size = new Size(83, 45);
+            btnlistar.Size = new Size(83, 56);
             btnlistar.TabIndex = 0;
             btnlistar.Text = "Desktop";
             btnlistar.UseVisualStyleBackColor = false;
@@ -225,7 +226,7 @@
             desktopToolStripMenuItem.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             desktopToolStripMenuItem.ForeColor = Color.FromArgb(6, 140, 109);
             desktopToolStripMenuItem.Name = "desktopToolStripMenuItem";
-            desktopToolStripMenuItem.Size = new Size(180, 24);
+            desktopToolStripMenuItem.Size = new Size(164, 24);
             desktopToolStripMenuItem.Text = "Desktop";
             desktopToolStripMenuItem.Click += desktopToolStripMenuItem_Click;
             // 
@@ -234,7 +235,7 @@
             impressorasToolStripMenuItem.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             impressorasToolStripMenuItem.ForeColor = Color.FromArgb(6, 140, 109);
             impressorasToolStripMenuItem.Name = "impressorasToolStripMenuItem";
-            impressorasToolStripMenuItem.Size = new Size(180, 24);
+            impressorasToolStripMenuItem.Size = new Size(164, 24);
             impressorasToolStripMenuItem.Text = "Impressoras";
             impressorasToolStripMenuItem.Click += impressorasToolStripMenuItem_Click;
             // 
@@ -243,7 +244,7 @@
             emailToolStripMenuItem.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             emailToolStripMenuItem.ForeColor = Color.FromArgb(6, 140, 109);
             emailToolStripMenuItem.Name = "emailToolStripMenuItem";
-            emailToolStripMenuItem.Size = new Size(180, 24);
+            emailToolStripMenuItem.Size = new Size(164, 24);
             emailToolStripMenuItem.Text = "Email";
             emailToolStripMenuItem.Click += emailToolStripMenuItem_Click;
             // 

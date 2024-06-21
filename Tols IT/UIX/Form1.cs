@@ -116,20 +116,20 @@ namespace Tols_IT
             txtPesquisar.Enabled = false;
             this.GetImpressora();
         }
-   
+
         //Input pesquisa para os desktop
         public void txtPesquisar_TextChanged(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-                    if (txtPesquisar.Text != string.Empty)
-                    {
-                        string usuario = txtPesquisar.Text;
-                        dt = ConnectionDB.GetPesquisa(usuario);
-                    }
-                    else
-                    {
-                        dt = ConnectionDB.GetDesktop();
-                    }  
+            if (txtPesquisar.Text != string.Empty)
+            {
+                string usuario = txtPesquisar.Text;
+                dt = ConnectionDB.GetPesquisa(usuario);
+            }
+            else
+            {
+                dt = ConnectionDB.GetDesktop();
+            }
 
             dataView1.DataSource = dt;
             txtPesquisar.Focus();
@@ -164,6 +164,15 @@ namespace Tols_IT
         {
             UixImpressroas uixImpressroas = new UixImpressroas();
             uixImpressroas.ShowDialog();
+        }
+
+        private void dataView1_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            string test = e.Button.ToString();
+            if (test == "Right")
+            {
+                MessageBox.Show(test);
+            }
         }
     }
 }

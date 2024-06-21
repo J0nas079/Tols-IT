@@ -144,9 +144,7 @@ namespace Tols_IT
             {
                 throw ex;
             }
-            // Validando retorno dos Combobox
-         
-           
+            // Validando retorno dos Combobox          
             MessageBox.Show("Dados inseridos com sucesso!");
         }
 
